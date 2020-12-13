@@ -33,7 +33,7 @@ body {
   background: #e8e8e8;
   color: #1C2B2D;
   font-family: 'Oswald', sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   line-height: normal;
   text-align: center;
 }
@@ -41,12 +41,11 @@ body {
 h1 {
   font-family: 'Oswald', sans-serif;
   color: #16697a;
-  font-size: 42px;
-  line-height: 80px;
+  font-size: 32px;
 }
 
 h2 {
-  font-size: 25px;
+  font-size: 22px;
   color: #16697a;
 }
 
@@ -56,6 +55,7 @@ li {
 
 img {
   width: 180px;
+  margin-top: 30px;
 }
 
 a. {
@@ -73,10 +73,17 @@ a. {
   background-color: #f4f4f2;
   padding: 15px;
   padding-bottom: 25px;
-  box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
+  box-shadow: 0px 10px 30px rgba(0,0,0,0.3);
   border-radius: 5px;
   margin: 20px 0px;
   text-align: center;
+}
+
+.project {
+  display: flex;
+  text-align: left;
+  padding-left: 12px;
+  padding-top: 8px;
 }
 
 .img-circle {
@@ -94,12 +101,22 @@ a. {
   padding-left: 0px;
 }
 .list-inline i {
-  font-size: 50px;
+  font-size: 35px;
   color: #db6400;
 }
 
 .list-inline i:hover {
   color: #ffa62b;
+}
+
+.link {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+.link:hover {
+  background-color: #ffa62b;
 }
 
 .btn-blue {
@@ -120,5 +137,11 @@ a. {
   margin: 2px;
 }
 
-/*495464*/
-/*ffe05d*/
+.iconify {
+  color: #67d5ee;
+}
+
+.fa, .fas {
+    color: #CE4119;
+    font-weight: 900;
+}
