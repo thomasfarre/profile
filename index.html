@@ -2,63 +2,68 @@
   <head>
     <title>My profile</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 
   </head>
 
   <body>
-    <div class="container">
-      <div class="card">
-        <img src="images/photo_moi.jpg" class="img-circle" width="100px" alt="Thomas Farre">
-        <h1>Thomas FARRE</h1>
-        <p>Après un master 2 en Sciences politiques, je me suis découvert une passion pour le developpement web.
-        UI/UX Design, Front et Back-end. Ce site me est l'occasion de vous parler un peu de moi et de vous montrer quelquesuns de mes projets</p>
-      </div>
-       <div class="card">
-          <h2>Web Development</h2>
-          <p>Adepte de Rails <i class="fas fa-gem"></i> et de Tailwind <span class="iconify" data-icon="mdi-tailwind" data-inline="false"></span></p>
+    <header class="py-4 px-4 flex flex-col text-center">
+      <h1 class="text-3xl text-semibold">Thomas FARRE</h1>
+      <span class="text-sm">Dévelopeur Full Stack</span>
+    </header>
+    <div class="pt-4 flex justify-center">
+      <img  class="w-56 rounded" src="images/photo_moi.jpg" alt="">
+    </div>
 
-          <span class="project">Un site pour préparer vos &nbsp <a href="https://tata-cocktail.herokuapp.com/cocktails" class="link"> meilleurs cocktails</a>,&nbsp n'hésitez pas à en ajouter...</span>
+    <section class="py-8 px-6 text-center">
+      <h2 class="text-2xl text-semibold">About me</h2>
+      <p class="pt-4">Après un master 2 en Sciences politiques, je me suis découvert une passion pour le developpement web. UI/UX Design, Front et Back-end. Ce site me est l'occasion de vous parler un peu de moi et de vous montrer quelquesuns de mes projets</p>
+    </section>
 
-          <span class="project">Un autres pour louer des &nbsp <a href="https://rent-a-monument.herokuapp.com/" class="link"> biens d'exceptions</a> &nbsp partout autour de la planète</span>
+    <main class="px-6 text-center">
+      <h2 class="text-2xl text-semibold">Work</h2>
 
-          <span class="project">Le meilleur, &nbsp <a href="https://www.lacoloc.xyz/" class="link"> la-coloc</a> &nbsp : finie la discussion sur la répartition des tâches, &nbsp <a href="https://github.com/Lioruby/la_coloc" class="link">github</a></span>
-      </div>
-      <div class="card">
-        <h2>Pour aller plus loin...</h2>
-        <ul class="list-inline">
-          <li>
-            <a href="https://github.com/thomasfarre" target="_blank">
-              <i class="fab fa-github-square">
-              </i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/thomas-farre-5661331ba/" target="_blank">
-              <i class="fab fa-linkedin">
-              </i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.facebook.com/thomas.farre.9/" target="_blank">
-              <i class="fab fa-facebook">
-              </i>
-            </a>
-          </li>
-          <li>
-            <a href= "https://kitt.lewagon.com/alumni/thomasfarre" target="_blank">
-              <i class="fab fa-weebly"></i>
-            </a>
-          </li>
-        </ul>
+      <div class="flex flex-col  py-4 mb-4 shadow-2xl">
+        <div>
+          <a href="https://www.lacoloc.xyz/colocations/1">
+            <img class="w-full" src="images/la_coloc.png" alt="">
+          </a>
+        </div>
+        <div class="pt-2 px-4 text-left">
+          <span class="text-xs uppercase rounded-full bg-blue-200 w-16">Mobile site</span>
+        </div>
+        <h3 class="pt-3 px-4 text-lg text-left">LaColoc</h3>
+        <span class="pt-2 px-4 text-sm text-left">Répartiteur de tâche pour colocataires. Projet le plus aboutit à l'heure actuel. Réalisé avec Rails pour le back, Tailwind du côté Front plus quelques librairies sympa...</span>
+        <div class="pt-2 px-4 text-left ">
+          <a  class="text-sm" href="https://github.com/Lioruby/la_coloc">Repository Github</a>
+        </div>
       </div>
 
+      <div class="flex flex-col  py-4 mb-4 shadow-2xl">
+        <div>
+          <a href="https://www.lacoloc.xyz/colocations/1">
+            <img class="w-full" src="images/la_coloc.png" alt="">
+          </a>
+        </div>
+        <div class="pt-2 px-4 text-left">
+          <span class="text-xs uppercase rounded-full bg-blue-200 w-16">Mobile site</span>
+        </div>
+        <h3 class="pt-3 px-4 text-lg text-left">LaColoc</h3>
+        <span class="pt-2 px-4 text-sm text-left">Répartiteur de tâche pour colocataires. Projet le plus aboutit à l'heure actuel. Réalisé avec Rails pour le back, Tailwind du côté Front plus quelques librairies sympa...</span>
+        <div class="pt-2 px-4 text-left ">
+          <a  class="text-sm" href="https://github.com/Lioruby/la_coloc">Repository Github</a>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+
+    </footer>
 
 
-</div>
-</body>
+  </body>
 
 </html>
