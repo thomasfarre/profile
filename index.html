@@ -9,59 +9,74 @@
 
   </head>
 
-  <body>
+  <body class="bg-gray-200">
     <header class="py-4 px-4 flex flex-col text-center">
       <h1 class="text-3xl text-semibold">Thomas FARRE</h1>
       <span class="text-sm">Dévelopeur Full Stack</span>
     </header>
-    <div class="pt-4 flex justify-center">
-      <img  class="w-56 rounded" src="images/photo_moi.jpg" alt="">
+    <div class="pt-4 px-6 flex justify-center">
+      <img  class="w-full rounded" src="images/photo_moi.jpg" alt="">
     </div>
 
     <section class="py-8 px-6 text-center">
       <h2 class="text-2xl text-semibold">About me</h2>
-      <p class="pt-4">Après un master 2 en Sciences politiques, je me suis découvert une passion pour le developpement web. UI/UX Design, Front et Back-end. Ce site me est l'occasion de vous parler un peu de moi et de vous montrer quelquesuns de mes projets</p>
+      <p class="pt-6">Après un master 2 en Sciences politiques, je me suis découvert une passion pour le developpement web. UI/UX Design, Front et Back-end. Ce site me est l'occasion de vous parler un peu de moi et de vous montrer quelquesuns de mes projets</p>
     </section>
 
-    <main class="px-6 text-center">
-      <h2 class="text-2xl text-semibold">Work</h2>
+    <main class="px-6 py-4">
+      <h2 class="pb-6 text-2xl text-semibold text-center">Work</h2>
 
-      <div class="flex flex-col  py-4 mb-4 shadow-2xl">
+
+
+
+
+      <div class="bg-white rounded-xl overflow-hidden">
         <div>
-          <a href="https://www.lacoloc.xyz/colocations/1">
-            <img class="w-full" src="images/la_coloc.png" alt="">
+          <a href="https://www.lacoloc.xyz/">
+          <img class="h-72 w-full object-cover object-top"src="images/lacoloc.jpg" alt="">
+        </div>
+
+        <div class="px-4 py-4">
+          <div class="pt-3 flex justify-between">
+            <span class="text-xs rounded-full bg-blue-200">Mobile</span>
+          </div>
+          <h3 class="pt-2 text-lg font-bold">LaColoc</h3>
           </a>
-        </div>
-        <div class="pt-2 px-4 text-left">
-          <span class="text-xs uppercase rounded-full bg-blue-200 w-16">Mobile site</span>
-        </div>
-        <h3 class="pt-3 px-4 text-lg text-left">LaColoc</h3>
-        <span class="pt-2 px-4 text-sm text-left">Répartiteur de tâche pour colocataires. Projet le plus aboutit à l'heure actuel. Réalisé avec Rails pour le back, Tailwind du côté Front plus quelques librairies sympa...</span>
-        <div class="pt-2 px-4 text-left ">
-          <a  class="text-sm" href="https://github.com/Lioruby/la_coloc">Repository Github</a>
+          <span class="pt-3 text-sm">Répartiteur de tâche pour colocataires. Réalisé avec Rails pour le back, Tailwind du côté Front plus quelques librairies sympa...</span>
+          <div class="pt-2">
+            <a  class="text-sm bg-yellow-300" href="https://github.com/Lioruby/la_coloc">Repository Github</a>
+          </div>
         </div>
       </div>
 
-      <div class="flex flex-col  py-4 mb-4 shadow-2xl">
-        <div>
-          <a href="https://www.lacoloc.xyz/colocations/1">
-            <img class="w-full" src="images/la_coloc.png" alt="">
-          </a>
-        </div>
-        <div class="pt-2 px-4 text-left">
-          <span class="text-xs uppercase rounded-full bg-blue-200 w-16">Mobile site</span>
-        </div>
-        <h3 class="pt-3 px-4 text-lg text-left">LaColoc</h3>
-        <span class="pt-2 px-4 text-sm text-left">Répartiteur de tâche pour colocataires. Projet le plus aboutit à l'heure actuel. Réalisé avec Rails pour le back, Tailwind du côté Front plus quelques librairies sympa...</span>
-        <div class="pt-2 px-4 text-left ">
-          <a  class="text-sm" href="https://github.com/Lioruby/la_coloc">Repository Github</a>
-        </div>
-      </div>
+
+
+
+
     </main>
 
-    <footer>
+    <footer class="md:hidden sticky bottom-0 bg-white flex justify-center items-center pb-2 pt-3 px-4 border-solid border-gray-200 border-t">
+      <div class="px-4">
+        <a href="https://github.com/thomasfarre">
+          <i class="fab fa-github-square"></i>
+        </a>
+      </div>
 
-    </footer>
+      <div class="px-4">
+        <a href="https://www.linkedin.com/in/thomas-farre-5661331ba/">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+
+      <div class="px-4">
+        <a href="https://www.codewars.com/users/tfarre">
+          <svg class="w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+          </svg>
+        </a>
+      </div>
+  </footer>
+
 
 
   </body>
