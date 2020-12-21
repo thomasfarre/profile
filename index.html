@@ -10,32 +10,41 @@
   </head>
 
   <body class="bg-gray-100">
-    <header class="py-6 px-4 flex flex-col text-center ">
-      <div class="">
-
-        <h1 class="text-3xl font-bold ">Thomas FARRE</h1>
-        <span class="text-sm text-yellow-600">Dévelopeur Full Stack</span>
+    <div class="flex">
+      <div class="hidden md:contents " style="padding-bottom: 80%">
+        <img  class="h-full w-1/2 m-6" src="images/photo_moi.jpg" alt="">
       </div>
+      <header class="py-6 px-6 flex flex-col text-center md:w-1/2">
+        <div class="">
 
-    </header>
-    <div class="mx-4 relative" style="padding-bottom: 80%">
-      <img  class="absolute h-full w-full inset-0 object-cover object-center shadow" src="images/photo_moi.jpg" alt="">
+          <h1 class="text-3xl font-bold ">Thomas FARRE</h1>
+          <span class="text-sm text-yellow-600">Dévelopeur Full Stack</span>
+        </div>
+
+
+        <div class="md:hidden mx-4 relative mt-4" style="padding-bottom: 80%">
+          <img  class="absolute h-full w-full inset-0 object-cover object-center shadow" src="images/photo_moi.jpg" alt="">
+        </div>
+
+        <div class="pt-4">
+          <h2 class="text-2xl font-semibold text-gray-800 mx-24 border-b-4 border-solid border-yellow-600 md:hidden">About me</h2>
+          <p class="pt-6">Le developpement web m'a permis de conjuguer ma soif d'apprendre et de créer. En tant que junior, je suis à la recherche de nouveaux challenges et d'apprendre toujours plus.
+            <br><br>UI/UX Design, Front et Back-end. Ce site est l'occasion de vous parler un peu de moi et de vous montrer quelques-uns de mes projets</p>
+        </div>
+      </header>
     </div>
 
-    <section class="py-6 px-6 text-center">
-      <h2 class="text-2xl font-semibold text-gray-800 mx-24 border-b-4 border-solid border-yellow-600">About me</h2>
-      <p class="pt-6">Le developpement web m'a permis de conjuguer ma soif d'apprendre et de créer. En tant que junior, je suis à la recherche de nouveaux challenges et d'apprendre toujours plus.
-        <br><br>UI/UX Design, Front et Back-end. Ce site est l'occasion de vous parler un peu de moi et de vous montrer quelques-uns de mes projets</p>
-    </section>
-
-    <main class="px-6 pt-4">
-      <h2 class="text-2xl font-semibold text-center text-gray-800 mx-28 border-b-4 border-solid border-yellow-600">Projets</h2>
+    <main class="pt-4">
+      <div class="px-6 md:w-80 md:-mx-24 md:pt-6">
+        <h2 class="text-2xl font-semibold text-center text-gray-800 mx-24 border-b-4 border-solid border-yellow-600 md:text-left md:text-3xl">Projets</h2>
+      </div>
 
 
 
 
+    <div class="md:inline-flex md:mt-6 md:-mx-2 md:gap-x-6 md:overflow-x-auto px-7">
+      <div class="bg-white rounded-xl overflow-hidden shadow my-10 md:mt-0 md:w-80 md:flex-shrink-0">
 
-      <div class="bg-white rounded-xl overflow-hidden shadow my-10">
         <div class="relative" style="padding-bottom: 80%;">
           <a class="" href="https://www.lacoloc.xyz/" target="_blank">
           <img class="absolute h-full w-full inset-0 object-cover object-top shadow"src="images/lacoloc.jpg" alt="">
@@ -61,9 +70,10 @@
             <a  class="text-sm bg-gray-300 hover:bg-gray-200" href="https://github.com/Lioruby/la_coloc" target="_blank">Repository Github</a>
           </div>
         </div>
+
       </div>
 
-      <div class="bg-white rounded-xl overflow-hidden shadow mb-10">
+      <div class="bg-white rounded-xl overflow-hidden shadow mb-10 md:w-80 md:flex-shrink-0">
         <div class="relative" style="padding-bottom: 80%;">
           <a class="" href="https://rent-a-monument.herokuapp.com/" target="_blank">
           <img class="absolute h-full w-full inset-0 object-cover object-top shadow"src="images/rent_monument.jpg" alt="">
@@ -90,7 +100,7 @@
         </div>
       </div>
 
-      <div class="bg-white rounded-xl overflow-hidden shadow mb-10">
+      <div class="bg-white rounded-xl overflow-hidden shadow mb-10 md:w-80 md:flex-shrink-0">
         <div class="relative" style="padding-bottom: 80%;">
           <a class="" href="https://tata-cocktail.herokuapp.com/" target="_blank">
           <img class="absolute h-full w-full inset-0 object-cover object-top shadow"src="images/cocktails.jpg" alt="">
@@ -116,7 +126,7 @@
         </div>
       </div>
 
-      <div class="bg-white rounded-xl overflow-hidden shadow mb-10">
+      <div class="bg-white rounded-xl overflow-hidden shadow mb-10 md:w-80 md:flex-shrink-0">
         <div class="relative" style="padding-bottom: 80%;">
           <a class="" href="https://thomasfarre.github.io/airbnb_copycat/" target="_blank">
           <img class="absolute h-full w-full inset-0 object-cover object-top shadow"src="images/airbnb.jpg" alt="">
@@ -141,6 +151,7 @@
           </div>
         </div>
       </div>
+    </div>
 
 
 
